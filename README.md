@@ -1,2 +1,2 @@
 # dotfiles
-Not just dotfiles, but also various config files and scripts
+Not just dotfiles, but also various scripts

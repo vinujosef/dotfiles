@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script to delete all docker containers, images and volumes
+# Delete all docker containers, images and volumes
 
 echo "===> DELETE CONTAINERS"
 docker rm $(docker ps -a -q) -f

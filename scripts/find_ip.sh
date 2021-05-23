@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+# Find my public or private IP address
 
 public_or_private="$1"
 

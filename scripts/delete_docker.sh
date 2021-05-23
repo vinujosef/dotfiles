@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Delete all docker containers, images and volumes
 
 echo "===> DELETE CONTAINERS"

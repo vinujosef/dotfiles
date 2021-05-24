@@ -15,4 +15,7 @@ find_ip.sh public
 find_ip.sh private
 ```
 
-- 
+- `update_node_version.sh` : Update NodeJS LTS version
+```bash
+
+```

@@ -17,5 +17,6 @@ find_ip.sh private
 
 - `update_node_version.sh` : Update NodeJS LTS version
 ```bash
-
+# Add as parameter to the script, the node version you want to install
+update_node_version.sh 14.7.2
 ```

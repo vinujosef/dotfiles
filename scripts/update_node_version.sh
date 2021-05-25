@@ -1,13 +1,17 @@
 #!/bin/bash
-# Update node version
+# Update Node Version
 
-node=$(node --version) #find node version and assign to "node" variable
+export NVM_DIR=$HOME/.nvm;
+source $NVM_DIR/nvm.sh; #Loads nvm
 
-node=${node#"v"} #remove "v" from the node version
-echo $node #output will be the current version of nodejs installed
+#Find current Node version
+node=$(node --version)
 
-# Install new nodejs by running
-# nvm install NEW_VERSION --reinstall-packages-from=OLD_VERSION
+#Remove "v" from the Node version
+node=${node#"v"}
+
+# Install new Node version
+$(nvm install $1 --reinstall-packages-from=$node)
 
 # Delete previous version
-# nvm unintall OLD_VERSION
+$(nvm uninstall $node)
